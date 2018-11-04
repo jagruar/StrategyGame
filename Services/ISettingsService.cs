@@ -6,6 +6,6 @@ namespace Services
 {
     interface ISettingsService
     {
-
+        dynamic GetSetting();
     }
 }

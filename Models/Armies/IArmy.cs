@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Models.Traits;
 
-namespace Models
+namespace Models.Armies
 {
     public interface IArmy
     {
+        int ArmyId { get; set; }
+
         int PlayerId { get; set; }
 
         ResourceSet Cost { get; set; }

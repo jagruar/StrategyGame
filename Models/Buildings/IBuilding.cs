@@ -2,18 +2,20 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Models
+namespace Models.Buildings
 {
     public interface IBuilding
     {
-        BuildingTypes BuildingType { get; set; }
+        BuildingType BuildingType { get; }
 
-        BuildingBranchTypes BuildingBranchType { get; set; }
+        BuildingBranchType BuildingBranchType { get; }
 
         int Level { get; set; }
 
         ResourceSet Cost { get; set; }
 
         ResourceSet Gain { get; set; }
+
+
     }
 }
